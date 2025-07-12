@@ -1,4 +1,4 @@
-# Biomni AI Agent Architecture Analysis
+# Biomni AI Agent Architecture Analysis Document
 
 ## Overview
 
