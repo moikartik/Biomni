@@ -1,0 +1,134 @@
+.output {
+  padding: 12px 16px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.output + .output {
+  border-top: 1px solid var(--border-color);
+}
+
+.output-text {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--text-primary);
+}
+
+.stream-output {
+  background: #fafafa;
+}
+
+.stream-output .output-text {
+  color: #374151;
+}
+
+.plain-output {
+  background: #fafafa;
+}
+
+.plain-output .output-text {
+  color: #374151;
+}
+
+.html-output {
+  background: #ffffff;
+  overflow-x: auto;
+}
+
+.html-output table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.html-output table th,
+.html-output table td {
+  border: 1px solid var(--border-color);
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.html-output table th {
+  background: #f8fafc;
+  font-weight: 600;
+}
+
+.html-output table tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.image-output {
+  background: #ffffff;
+  text-align: center;
+  padding: 16px;
+}
+
+.image-output img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.error-output {
+  background: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid #ef4444;
+}
+
+.error-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.error-name {
+  color: #dc2626;
+}
+
+.error-value {
+  color: #991b1b;
+}
+
+.error-traceback {
+  margin: 8px 0 0 0;
+  padding: 12px;
+  background: #fef2f2;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  color: #7f1d1d;
+}
+
+.unknown-output {
+  background: #fef3c7;
+  color: #78350f;
+  border-left: 4px solid #f59e0b;
+}
+
+.unknown-output pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .output {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .html-output table {
+    font-size: 11px;
+  }
+
+  .error-traceback {
+    font-size: 11px;
+  }
+}
