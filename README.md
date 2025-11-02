@@ -110,6 +110,18 @@ Let’s build it together.
 
 More to come!
 
+### React Notebook Viewer
+
+To browse the tutorials without launching Jupyter, open the React viewer located in `notebooks-react/`:
+
+```bash
+cd notebooks-react
+npm install
+npm run dev
+```
+
+The app renders the official notebooks directly in the browser from their `.ipynb` files.
+
 ## 🌐 Web Interface
 
 Experience Biomni through our no-code web interface at **[biomni.stanford.edu](https://biomni.stanford.edu)**.
